@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="taskpage.css">
+</head>
+<body>
+    <div class="task">
+        <div id="nav"></div>
+        <div id="side"></div>
+        <div id="titles">
+            <!-- <h2 id="head">CLASS LINK </h2>
+            <h2 id="head">CLASS TIME </h2>  
+            <h2 id="head">TASK TITLE</h2>
+            <h2 id="head">DESCRIPTION</h2>
+            <h2 id="head">DUE DATE</h2> -->
+            <div id="taskData"></div>
+      
+        <button id="upload">UPLOAD</button>
+<br><br><br><br><br><br><br>
+    
+    </div></div>
+    <script src="taskpage.js"></script>
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+    const taskDataDiv = document.getElementById('taskData');
+
+    fetch('/tasks')
+        .then(response => response.json())
+        .then(tasksData => {
+            tasksData.forEach(task => {
+                const taskDetails = `
+                    <p>CLASS TIME: ${task.time ? new Date(task.time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : 'N/A'}</p>
+                    <p>TASK TITLE: ${task.title || 'N/A'}</p>
+                    <p>DESCRIPTION: ${task.description || 'N/A'}</p>
+                    <p>DUE DATE: ${task.dueDate ? new Date(task.dueDate).toLocaleDateString() : 'N/A'}</p>
+                    <hr>
+                `;
+                taskDataDiv.innerHTML += taskDetails;
+            });
+        })
+        .catch(error => console.error('Error fetching tasks:', error));
+
+    fetch('/links')
+        .then(response => response.json())
+        .then(linksData => {
+            linksData.forEach(link => {
+                const linkDetails = `
+                    <p>CLASS LINK: ${link.link || 'N/A'}</p>
+                    <p>CLASS TIME: ${link.time ? new Date(link.time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : 'N/A'}</p>
+                    <hr>
+                `;
+                taskDataDiv.innerHTML += linkDetails;
+            });
+        })
+        .catch(error => console.error('Error fetching links:', error));
+});
+
+    </script>
+    
+</body>
+</html>
+

@@ -1,0 +1,107 @@
+.login{
+    margin-top: 0px;
+    margin-bottom: 1px;
+    position: absolute;
+  }
+  .split {
+      height: 100%;
+      width: 50%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+    .mentor img{
+      height: 150px;
+      padding-bottom: 40px;
+      position: relative;
+    }
+    .mentee img{
+      margin-bottom: 10px;
+      height: 180px;
+      position: relative;
+    }
+    /* Control the left side */
+    .left {
+      left: 0;
+      background-color: #88B0D7;
+    }
+    
+    /* Control the right side */
+    .right {
+      right: 0;
+      background-color: #192170;
+    }
+    
+    /* If you want the content centered horizontally and vertically */
+    .centered {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      margin-bottom: 100px;
+      margin-top: 50px;
+    }
+    .centered img {
+    width: 150px;
+    margin-top: 50px;
+  }
+  #submit{
+      position: fixed;
+      top: 100%;
+      left: 35%;
+      border-radius: 40px;
+      width: 100px;
+      height: 30px;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      border: none;
+      color: white;
+      box-shadow: 0 2px rgb(75, 75, 75);
+  }
+  .centered h2{
+      font-family:monospace;
+      font-size: 40px;
+      padding-top: 0px;
+      color: white;
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
+  #h4l{
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: white;
+      margin-bottom: 20px;  
+      margin-right: 15px;
+  }
+  #label{
+      font-family: Arial, Helvetica, sans-serif;
+      margin-right: 260px;
+      color: white;
+      margin-bottom: 10px;
+  }
+  #label1{
+      margin-bottom: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-right: 280px;
+      color: white;
+      margin-left: 0px;
+  }
+  .form input[type="text"]{
+      width: 350px;
+      height: 40px;
+      border-radius: 10px;
+      background-color: white;
+      border: none;
+  }
+  #logo{
+    margin-top: 15px;
+    margin-right: 60px;
+    margin-left: 10px;
+    height: 70px;
+    width: 150px;
+    z-index: 800;
+    position: absolute;
+  }

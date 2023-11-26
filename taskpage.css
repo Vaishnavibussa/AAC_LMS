@@ -1,0 +1,65 @@
+.task{
+    background-color: #DAE0E3;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+  }
+  #nav{
+    background-color: #88B0D7;
+    width: 100%;
+    height: 75px;
+    margin-top: 0;
+    position: absolute;
+  }
+  #side{
+    background-color: #233B6E;
+    height: 100%;
+    width: 70px;
+    position: absolute;
+    margin-top: 75px;
+  }
+  #titles{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #head{
+    height: 40px;
+    width: 200px;
+    padding-top: 10px;
+    background-color: #A4C4D2;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 1px #999;
+    font-weight: lighter;
+    font-size: larger;
+  }
+  #feedback{
+    position: absolute;
+    height: 40px;
+    width: 200px;
+    padding-top: 10px;
+    background-color: #A4C4D2;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 1px #999;
+    margin-top: 35%;
+    font-weight: lighter;
+    font-size: larger;
+    /* float: right; */
+  }
+  #upload{
+    position: absolute;
+    margin-top: 32%;
+    margin-right: 40%;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-color: #7E90B6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: larger;
+    box-shadow: 1px 1px 3px 1px #999;
+    /* float: right; */
+  }
