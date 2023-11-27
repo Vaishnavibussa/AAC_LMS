@@ -71,8 +71,8 @@
     margin-top: 0px;
     margin-bottom: 0px;
 }
-#h4l{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.user-subtitle{
+  font-family: 'PT Sans Caption', sans-serif;
     color: white;
     margin-bottom: 20px;  
     margin-right: 15px;
@@ -105,4 +105,16 @@
   width: 150px;
   z-index: 800;
   position: absolute;
+}
+.login-person{
+  font-family: 'Allerta Stencil', sans-serif;
+}
+.mentor-heading, .mentor-user-subtitle{
+  color: #192170;
+}
+.mentor-user-subtitle, .mentee-user-subtitle{
+  font-family: 'PT Sans Caption', sans-serif;
+}
+.mentee-heading, .mentee-user-subtitle{
+  color: white;
 }
