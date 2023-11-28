@@ -22,7 +22,7 @@ db.connect((err) => {
 
 // Serve HTML page
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/mymentor.html');
+  res.sendFile(__dirname + '../html/mymentor.html');
 });
 
 // Endpoint to fetch mentor details
