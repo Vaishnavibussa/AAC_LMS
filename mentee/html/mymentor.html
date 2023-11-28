@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styling/myMentor.css">
+</head>
+<body>
+=======
+    <link rel="stylesheet" href="../javascript/mymentor.js">
+</head>
+<body>
+    <div class="mentor" id="mentorDetails">
+        <div id="nav"></div>
+        <div id="side"></div>
+        <div id="picture1"></div>
+        <div id="picture2"></div>
+        <div id="left">
+            <h2 id="head">Name</h2>
+            <h2 id="head">Ph Number</h2>
+            <h2 id="head">email</h2>
+        </div>
+        <div id="right">
+            <h2 id="head">Name</h2>
+            <h2 id="head">Ph Number</h2>
+            <h2 id="head">email</h2>
+        </div>
+        <div id="lcolon">
+            <h2 id="colon">:</h2>
+            <h2 id="colon">: </h2>
+            <h2 id="colon">: </h2>
+        </div>
+        <div id="rcolon">
+            <h2 id="colon">: </h2>
+            <h2 id="colon">: </h2>
+            <h2 id="colon">: </h2>
+        </div>
+    </div>
+    <script>// Fetch data from the server
+        fetch('/mentors')
+            .then(response => response.json())
+            .then(data => displayMentorDetails(data))
+            .catch(error => console.error('Error:', error));
+        
+        // Display mentor details on the HTML page
+        function displayMentorDetails(data) {
+            const mentorDiv = document.getElementById('mentorDetails');
+            data.forEach(mentor => {
+                const mentorDivElem = document.createElement('div');
+                mentorDivElem.innerHTML = `
+                    <h2>Name: ${mentor.mentor_name}</h2>
+                    <h2>Phone Number: ${mentor.phone_number}</h2>
+                    <h2>Email: ${mentor.email}</h2>
+                    <hr>
+                `;
+                mentorDiv.appendChild(mentorDivElem);
+            });
+        }
+        
+        </script>
+</body>
+</html>

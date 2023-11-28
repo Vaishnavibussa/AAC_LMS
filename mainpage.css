@@ -1,0 +1,236 @@
+*{
+    padding: auto;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    font-family: 'Poppins';
+}
+nav{
+    height: 4.375rem;
+    width: 1 rem;
+    background-color: #88B0D7;
+}
+nav ul{
+    float:right;
+    margin-right: 2.5rem;
+}
+nav li{
+    display: inline-block;
+    margin: 0.0625 0.5rem;
+    line-height: 5rem;
+}
+nav a{
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    font-size: 1.2500rem;
+    margin-top: 1.25rem;
+    padding: 0.4375rem 0.635rem;
+    border-radius: 0.1875rem;
+}
+#box1{
+    height: 38.4rem;
+    /* width: 100%; */
+    background-color: #191270;
+}
+#firstletter{
+    color: #88B0D7;
+}
+h1{
+    position: absolute;
+    color: white;
+    font-size: 6.25rem;
+    padding: 10rem;
+    margin-left: 4.375rem;
+    bottom: 0.001rem;
+
+    
+}
+#img1{
+    float: left;
+
+}
+#img11{
+    position:absolute;
+    top: 15.5rem;
+    margin-left: 39.375rem;
+    height: 18.75rem;
+    width: 18.75rem;
+}
+#login{
+    height: 5rem;
+    width: 12.5rem;
+    color: #191270;
+    background-color: #88B0D7;
+    font-size: 3.125rem;
+    padding: 1.25rem;
+    border-radius: 1.875rem;
+    line-height: 1.875rem;
+    font-weight: bold;
+    
+}
+#box2{
+    height: 38.75rem;
+    /* width: 100%; */
+    background-color: #88B0D7;
+    display: flex;
+    flex-direction: row;
+}
+#mission{
+    height: 27.5rem;
+    width:23rem;
+    background-color: #D3DEE4;
+    color: #191270;
+    border-radius: 1.875rem;
+    line-height: 2.5rem;
+    font-size: 1.5625rem;
+    padding: 2.5rem;
+    word-spacing: .2rem;
+}
+
+#aboutus{
+    height: 27.5rem;
+    width:23rem;
+    background-color:#D3DEE4 ;
+    color: #191270;
+    border-radius: 1.875rem;
+    line-height: 2.5rem;
+    font-size: 1.5625rem;
+    padding: 2.5rem;
+    word-spacing: .2em;
+}
+#weoffer{
+    height: 27.5rem;
+    width:23rem;
+    background-color:#D3DEE4;
+    color: #191270;
+    border-radius: 1.875rem;
+    line-height: 2.5rem;
+    font-size: 1.5625rem;
+    padding: 2.5rem;
+    word-spacing: .2rem;
+
+}
+#heading{
+    background-color: #191270;
+    color: white;
+    font-size: 1.875rem;
+    /* padding: 0% */
+    text-align: center;
+    border-radius: 1.875rem 0rem;
+    height: 5rem;
+    line-height: 5rem;
+}
+#box3{
+    height: 62.5rem;
+    width: 100%;
+    background-color: #191270;
+}
+#who{
+    color: white;
+    font-size: 3.125rem;
+    line-height: 10.625rem;
+    margin-left: 40rem;
+    font-weight: bolder;
+}
+.b0{
+    display: flex;
+    flex-direction: row;
+    border-radius: 1.875rem;
+    margin-top: 1.25rem;
+}
+.b1{
+    width: 18rem;
+    height: 18.75rem;
+    background-color: #a6a6a6;
+    font-weight: 900;       
+    
+}
+.b2{
+    width: 18rem;
+    height: 18.75rem;
+    background-color: #a6a6a6;
+     font-weight: 900;   
+}
+.b3{
+    width: 18rem;
+    height: 18.75rem;
+    background-color: #a6a6a6;
+    justify-content: center;
+    font-weight: 900;      
+}
+#dpv{
+    margin-top: 16.25rem;
+    background-color: #88B0D7;
+    color: #191270;
+    font-size: 1.875rem;
+    font-weight: bold;
+    height: 2.5rem;
+    line-height:3.125rem;
+    text-align: center;
+    
+}
+#ctc{
+    background-color: #88B0D7;
+    color: #191270;
+    text-align: center;
+    font-size:1.25rem;
+    margin-top: 1.875rem;
+    height: 2.5rem;
+    line-height: 2.3125rem;
+    font-weight: inherit;
+    border-radius: 0.625rem;
+    font-weight: bolder;
+}
+#box4{
+    width: 100%;
+    height: 15.625rem;
+    background-color: #88B0D7;
+    margin-top: 12.5rem;
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
+}
+#aacweb{
+    height: 6.25rem;
+    width: 11.25rem;
+    padding: 1.5625rem;
+    margin-left: 5rem;
+    margin-top: 3.125rem;
+    box-shadow:0rem -0.0625rem 1.5625rem rgba(0,0,0,0.1), 0.0625rem 0.0625rem 1.5625rem rgba(0,0,0,0.1);
+
+
+}
+    #aacweb:hover{
+    background-color: aliceblue;
+}
+.icons{
+    float: right;
+    padding: 2.5rem;
+    margin-right: 2.5rem;
+
+}
+#icon{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 1.875rem;
+    margin-left:5rem;
+    background-color: #191270;
+    border-radius: 0.5rem;
+
+}
+#icon:hover{
+     background-color: #085eae;
+}
+
+#mail{
+    font-size: 1.25rem;
+    text-align: center;
+    color: #191270;
+    font-weight: bolder;    
+    margin-left:5rem;
+}
+a:hover{
+    color: #191270;
+}
+#login:hover{
+    color: #191270;
+}
