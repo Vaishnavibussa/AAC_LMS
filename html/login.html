@@ -9,6 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="login.js">
     <link rel="stylesheet" href="../styling/login.css">
 
@@ -16,48 +21,53 @@
 <body>
     <img id="logo" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699446914/Tej/AAC-logo_cggiv4.png
     " alt="AAC Logo">
-    <div class="login">
-        <div class="Mentor">
-            <div class="split left">
-                <div class="centered">                
-                   <img src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699447783/Tej/mentor-img_bsplxi.png
-                   " alt="Mentor icon">
-                    <h1 class="login-person mentor-heading">MENTOR</h1>
-                    <p class="user-subtitle mentor-user-subtitle">Fill the following details to login as a Mentor</p>
-                    <form class="form" action="/" id="form1" method="POST">
-                        <h3 class="label1" style="color: #192170; ">AAC ID:</h3>
-                        <input type="text" placeholder="Enter your AAC ID" name="AAC_ID">
-                        <h3 class="label" style="color: #192170;">Password: </h3>
-                        <input type="hidden" name="loginType" value="mentor">
-                        <input type="password" placeholder="Enter Password" name="PASSWORD"><br><br>
-                        <button id="submit" type="submit" name="submit" value="LOGIN" style="background-color: #192170;">Submit</button>
-                    </form>
+    <div class="container">
+        <div class="row">
+            
+                <div class="col-6 Mentor">
+                    <div class="split left">
+                        <div class="centered">                
+                        <img src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699447783/Tej/mentor-img_bsplxi.png
+                        " alt="Mentor-icon">
+                            <h1 class="login-person mentor-heading">MENTOR</h1>
+                            <p class="user-subtitle mentor-user-subtitle">Fill the following details to login as a Mentor</p>
+                            <form class="form" action="/" id="form1" method="POST">
+                                <h3 class="label1" style="color: #192170; ">AAC ID:</h3>
+                                <input placeholder="Enter your AAC ID" name="AAC_ID">
+                                <h3 class="label1" style="color: #192170;">Password: </h3>
+                                <input type="hidden" name="loginType" value="mentor">
+                                <input type="password" placeholder="Enter Password" name="PASSWORD"><br><br>
+                                <button id="mentor-login-submit-btn" type="submit" name="submit" value="LOGIN" style="background-color: #192170;">Submit</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="Mentee">
-            <div class="split right">
-                <div class="centered">
-                    <img src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699447782/Tej/mentee-img_obtbmy.png
-                    " alt="Mentee icon">
-                    <h1 class="login-person mentee-heading">MENTEE</h1>
-                    <p class="user-subtitle mentee-user-subtitle" style="color: white;">Fill the following details to login as a Mentee</p>
-                    <form class="form" id="form2" action="/" method="post">
-                        <h3 class="label1">AAC ID:</h3>
-                        <input type="text" placeholder="Enter your AAC ID" name="AAC_ID">
-                        <input type="hidden" name="loginType" value="mentee">
-                        <h3 class="label">Password: </h3>
-                        <input type="password" placeholder="Enter Password" name="PASSWORD"><br><br>
-                        <button id="submit1" type="submit" style="background-color: #88B0D7;">Submit</button>
-                    </form>
+                <div class="col-6 Mentee">
+                    <div class="split right">
+                        <div class="centered">
+                            <img src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699447782/Tej/mentee-img_obtbmy.png
+                            " alt="Mentee-icon">
+                            <h1 class="login-person mentee-heading">MENTEE</h1>
+                            <p class="user-subtitle mentee-user-subtitle" style="color: white;">Fill the following details to login as a Mentee</p>
+                            <form class="form" id="form2" action="/" method="post">
+                                <h3 class="label1">AAC ID:</h3>
+                                <input placeholder="Enter your AAC ID" name="AAC_ID">
+                                <input type="hidden" name="loginType" value="mentee">
+                                <h3 class="label1">Password: </h3>
+                                <input type="password" placeholder="Enter Password" name="PASSWORD"><br><br>
+                                <button id="mentee-login-submit-btn" type="submit" style="background-color: #88B0D7;">Submit</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+
+
+                    
+                </div>
         </div>
-
-
-
-        
-    </div>
+    
+    
 
 </body>
 </html>
