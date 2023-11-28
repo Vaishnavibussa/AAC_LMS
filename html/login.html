@@ -30,7 +30,9 @@
                         <h3 class="label" style="color: #192170;">Password: </h3>
                         <input type="hidden" name="loginType" value="mentor">
                         <input type="password" placeholder="Enter Password" name="PASSWORD"><br><br>
-                        <button id="submit" type="submit" name="submit" value="LOGIN" style="background-color: #192170;">Submit</button>
+                        <!-- <button id="submit" type="submit" name="submit" value="LOGIN" style="background-color: #192170;">Submit</button> -->
+                        <a href="home.html" id="submit" style="background-color: #192170; display: inline-block; padding: 10px 20px; text-decoration: none; color: white;">Submit</a>
+
                     </form>
                 </div>
             </div>
@@ -48,7 +50,8 @@
                         <input type="hidden" name="loginType" value="mentee">
                         <h3 class="label">Password: </h3>
                         <input type="password" placeholder="Enter Password" name="PASSWORD"><br><br>
-                        <button id="submit1" type="submit" style="background-color: #88B0D7;">Submit</button>
+                        <!-- <button id="submit1" type="submit" style="background-color: #88B0D7;">Submit</button> -->
+                        <a href="home.html" id="submit1" style="background-color:#88B0D7  ; display: inline-block; padding: 10px 20px; text-decoration: none; color: white;">Submit</a>
                     </form>
                 </div>
             </div>
@@ -58,7 +61,23 @@
 
         
     </div>
+<!-- <script> 
 
+
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+
+            // Redirect to home.html after form submission
+            window.location.href = 'html/home.html';
+        });
+
+        // Add an event listener to the button with id 'submit1'
+        document.getElementById('submit1').addEventListener('click', function(event) {
+            // Redirect to home.html when 'submit1' button is clicked
+            window.location.href = 'html/home.html';
+        });
+</script> -->
 </body>
 </html>
 
