@@ -15,7 +15,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="login.js">
-    <link rel="stylesheet" href="../styling/login.css">
+    <link rel="stylesheet" href="login.css">
 
 </head>
 <body>
@@ -37,8 +37,10 @@
                                 <h3 class="label1" style="color: #192170;">Password: </h3>
                                 <input type="hidden" name="loginType" value="mentor">
                                 <input type="password" placeholder="Enter Password" name="PASSWORD"><br><br>
-                                <button id="mentor-login-submit-btn" type="submit" name="submit" value="LOGIN" style="background-color: #192170;">Submit</button>
-                            </form>
+                            <a href="../../mentor/html/home.html">
+                                 <button id="mentor-login-submit-btn" type="button" name="submit" value="LOGIN" style="background-color: #192170;">Submit</button></a>
+                            </a>
+                        </form>
                         </div>
                     </div>
                 </div>
@@ -55,13 +57,60 @@
                                 <input type="hidden" name="loginType" value="mentee">
                                 <h3 class="label1">Password: </h3>
                                 <input type="password" placeholder="Enter Password" name="PASSWORD"><br><br>
-                                <button id="mentee-login-submit-btn" type="submit" style="background-color: #88B0D7;">Submit</button>
+                                <a href="../../mentee/html/home.html">
+                                <button id="mentee-login-submit-btn" type="button" name="submit" value="LOGIN" style="background-color: #88B0D7;">Submit</button></a>
+                            </a>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- <script>
+            document.getElementById('mentor-login-submit-btn').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent form submission
+    
+                // Handle form data submission
+                fetch('/submit', {
+                    method: 'POST',
+                    body: new FormData(document.getElementById('form1'))
+                })
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = '../../mentor/html/home.html';
+                    } else {
+                        // Handle errors if needed
+                    }
+                })
+                .catch(error => {
+                    // Handle errors if needed
+                });
+            });
+    
+            document.getElementById('mentee-login-submit-btn').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent form submission
+    
+                // Handle form data submission
+                fetch('/submit', {
+                    method: 'POST',
+                    body: new FormData(document.getElementById('form2'))
+                })
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = '../../mentee/html/home.html';
+                    } else {
+                        // Handle errors if needed
+                    }
+                })
+                .catch(error => {
+                    // Handle errors if needed
+                });
+            });
+        </script> -->
+
+
     </body>
 </html>
+
 

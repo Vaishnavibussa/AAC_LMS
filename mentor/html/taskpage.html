@@ -26,6 +26,7 @@
    document.addEventListener('DOMContentLoaded', () => {
     const taskDataDiv = document.getElementById('taskData');
 
+    
     fetch('/tasks')
         .then(response => response.json())
         .then(tasksData => {
