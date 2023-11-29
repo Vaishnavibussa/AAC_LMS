@@ -11,8 +11,8 @@
   vertical-align: middle;
 }
 .icon-box{
-  top: 15%;
-  position: relative;                
+  /* top: 15%; */
+  /* position: fixed;                 */
 }
 .icons{
   height: 65px;
