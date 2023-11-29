@@ -3,21 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>AAC-LMS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allegra+Stencil&display=swap">
     <link rel="stylesheet" href="../styling/home.css">
 
     <script src="https://kit.fontawesome.com/d396ce8b26.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
 </head>
 <body>
-    <div id="calendar"></div>
 
+    <div class="topbox">
+        <div class="logo">
+            <img class="logo1" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699446914/Tej/AAC-logo_cggiv4.png
+            ">
+        </div>
+        <div class="npicons">
+            <img class="np" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699447782/Tej/notification-logo_ixgll2.png
+                ">
+            <img class="np" src="https://res.cloudinary.com/dniqddd3d/image/upload/v1701264672/profile-img_1_anla9l.png">
+        </div>
+    </div>
 
+    
+    <div class="parent-box col-1">
+        <div class="icon-box">
+            <div class="icons" id="icon-1" ></div>
+            <div class="icons" id="icon-2"></div>
+            <div class="icons" id="icon-3"></div>
+            <div class="icons" id="icon-4"></div>
+            <div class="icons" id="icon-5"></div>
+            <div class="icons" id="icon-6"></div>
+        </div>
+    </div>
+
+    <div id="calendar"></div>  
+    
+
+    <script>
+        
+        $(document).ready(function() {
+    $('#calendar').fullCalendar({
+        header: {
+            left: 'prev',
+            center: 'title',
+            right: 'next'
+        },
+        events: [
+            {
+                title: 'Event 1',
+                start: '2023-11-27T10:00:00',
+                end: '2023-11-27T12:00:00'
+            },
+            {
+                title: 'Event 2',
+                start: '2023-11-28T14:00:00',
+                end: '2023-11-28T16:00:00'
+            },
+            // Add more events as needed
+        ]
+        // Additional options can be added here
+    });
+});
+
+    </script> 
 
 </body>
 </html>

@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.parent-box{
+  height: 100%;
+  width: 70px;
+  background-color: #233B6E;    
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon-box{
+  top: 15%;
+  position: relative;                
+}
+.icons{
+  height: 9%;
+  width: 72%;
+  background-color: #233B6E;
+  border-radius: 50%;
+  margin: 20% 0% 0% 10%;
+  box-shadow: rgba(0.3, 0.3, 0.3, 0.3) 0px 3px 2px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.icons:hover::after{
+  color: white;
+  font-size: 200%;
+  position: absolute; 
+  left: 99%;
+  height: max-content;
+  width: max-content;
+  background-color: #233B6E;
+  padding: 20% 20% 20% 20%;
+  /* clip-path: polygon(75% 0%, 75% 0%, 90% 50%, 75% 100%, 75% 100%); */
+}
+#icon-1{
+  background-image: url(' https://res.cloudinary.com/dp6gegfek/image/upload/v1699447781/Tej/home-img_wc4n1x.png');
+  background-size: contain; /* Adjust the value as needed */
+  background-repeat: no-repeat;
+  background-size: contain; /* Adjust the value as needed */
+  background-repeat: no-repeat;
+}
+#icon-2{
+  background-image: url('https://res.cloudinary.com/dp6gegfek/image/upload/v1699447781/Tej/tasks-img_qtdnyl.png');
+  background-size: contain; /* Adjust the value as needed */
+  background-repeat: no-repeat;
+}
+#icon-3{
+  background-image: url('https://res.cloudinary.com/dp6gegfek/image/upload/v1699447781/Tej/projects-img_dc8x3o.png');
+background-size: contain; /* Adjust the value as needed */
+  background-repeat: no-repeat;
+}
+#icon-4{
+  background-image: url('https://res.cloudinary.com/dp6gegfek/image/upload/v1699447781/Tej/groups-img_ns9bxi.png');
+background-size: contain; /* Adjust the value as needed */
+  background-repeat: no-repeat;
+}
+#icon-5{
+  background-image: url('https://res.cloudinary.com/dp6gegfek/image/upload/v1699448722/Tej/image_63_lcnyj0.png');
+background-size: contain; /* Adjust the value as needed */
+  background-repeat: no-repeat;
+}
+#icon-6{
+  background-image: url('https://res.cloudinary.com/dp6gegfek/image/upload/v1699448716/Tej/exit_vbnkrq.png');
+  margin-top: 200%;
+  background-size: contain; /* Adjust the value as needed */
+  background-repeat: no-repeat;
+}
+#icon-1:hover::after{
+  content: "Home";
+  top: 2%;    
+}
+#icon-2:hover::after{
+  content: "Tasks";
+  top: 16.5%;
+}
+#icon-3:hover::after{
+  content: "Projects";
+  top: 32%;
+}
+#icon-4:hover::after{   
+  content: "Mymentor";
+  top: 47%;
+}
+#icon-5:hover::after{
+  content: "Logout";
+  top: 90%;
+}
+.topbox{
+position: absolute;
+width: 100%;
+height: 75px; 
+background-color: #88B0D7;
+top: 0%;
+display: flex;  
+justify-content: space-between;
+}
+.npicons{
+  display: flex;
+  justify-content: space-between;
+}
+.np{
+  height: 70%;
+  margin: 5% 3rem 0% 0%;
+  cursor: pointer;
+}
+.logo1{
+  height: 90%;
+  width: 100%;
+  padding: 0.5rem 0rem 0rem 4rem;
+}
+
+
+.fc-widget-header{
+  background-color:#9F9D9D;
+  padding: 7px 0px 15px 0px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.fc-day-header{
+  font-family: 'Allerta Stencil', sans-serif;
+}
+.fc-body{
+  background-color: #DAE0E3;
+}
+.fc-day{
+  border-radius: 20px;
+}
+
+.fc-day-number {
+  background-color: #ffffff;
+  border-color: black;
+  border-width: 1px;
+  color: black;
+  border-radius: 50%;
+  width: 40px;
+  height: 35px;
+  line-height: 35px;
+  font-family: 'Urbanist', sans-serif;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.fc td,.fc th{
+  border-width: 0px;
+}
+
+.fc-day-grid-event .fc-content {
+  text-align: center;
+}
+
+#calendar {
+  max-width: 60%;
+  margin:0 auto;
+  background-size: cover;
+}
+.fc-day-top{
+  margin: 20px;
+}
+.fc-header-toolbar h2 {
+  font-family: 'Allerta Stencil', sans-serif;
+}
+.fc-toolbar,.fc-header-toolbar{
+  background-color: #A4C4D2;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 0px;
+}
+
+
+.navbar-container{
+  background-color: #88B0D7;
+}
+.navbar-logo{
+  height: 40px;
+}
+.notification-logo{
+  height: 40px;
+}
