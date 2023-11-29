@@ -15,12 +15,12 @@
   position: relative;                
 }
 .icons{
-  height: 9%;
-  width: 72%;
-  background-color: #233B6E;
-  border-radius: 50%;
-  margin: 20% 0% 0% 10%;
-  box-shadow: rgba(0.3, 0.3, 0.3, 0.3) 0px 3px 2px;
+  height: 65px;
+  width: 50px;
+  /* background-color: #233B6E; */
+  /* border-radius: 50%; */
+  margin:20px 10px ; 
+  /* box-shadow: rgba(0.3, 0.3, 0.3, 0.3) 0px 3px 2px; */
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -66,9 +66,10 @@ background-size: contain; /* Adjust the value as needed */
   background-repeat: no-repeat;
 }
 #icon-6{
+  margin-top: auto;
   background-image: url('https://res.cloudinary.com/dp6gegfek/image/upload/v1699448716/Tej/exit_vbnkrq.png');
-  margin-top: 200%;
-  background-size: contain; /* Adjust the value as needed */
+  /* margin-top: 200%; */
+
   background-repeat: no-repeat;
 }
 #icon-1:hover::after{
