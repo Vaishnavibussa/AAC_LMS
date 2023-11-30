@@ -67,6 +67,7 @@ background-size: contain; /* Adjust the value as needed */
 }
 #icon-6{
   margin-top: auto;
+  margin-bottom: 10px;
   background-image: url('https://res.cloudinary.com/dp6gegfek/image/upload/v1699448716/Tej/exit_vbnkrq.png');
   /* margin-top: 200%; */
 
