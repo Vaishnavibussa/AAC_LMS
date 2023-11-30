@@ -1,10 +1,11 @@
 .mentor{
     background-color: #DAE0E3;
-    height: 590px;
+    /* height: 590px; */
     width: 1270px;
+    /* left: 600px; */
     position: fixed;
 }
-#nav{
+/* #nav{
     background-color: #88B0D7;
     width: 1264px;
     height: 75px;
@@ -17,7 +18,7 @@
     width: 70px;
     position: absolute;
     margin-top: 75px;
-}
+} */
 #picture1{
     height: 120px;
     width: 100px;

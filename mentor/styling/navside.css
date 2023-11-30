@@ -13,17 +13,17 @@
   /* position: fixed;                 */
 }
 .icons{
-  height: 55px;
-  width: 40px;
+  height: 65px;
+  width: 45px;
   /* background-color: #233B6E; */
   /* border-radius: 50%; */
-  margin-bottom:10px ; 
+  margin:20px 10px ; 
   /* box-shadow: rgba(0.3, 0.3, 0.3, 0.3) 0px 3px 2px; */
   align-items: center;
   justify-content: center;
   cursor: pointer;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
 }
 .icons:hover::after{
   color: white;
@@ -69,27 +69,32 @@ background-size: contain; /* Adjust the value as needed */
   margin-bottom: 10px;
   background-image: url('https://res.cloudinary.com/dp6gegfek/image/upload/v1699448716/Tej/exit_vbnkrq.png');
   /* margin-top: 200%; */
+
   background-repeat: no-repeat;
 }
 #icon-1:hover::after{
   content: "Home";
-  top: 2%;    
+  top: 110px;    
 }
 #icon-2:hover::after{
   content: "Tasks";
-  top: 16.5%;
+  top: 190;
 }
 #icon-3:hover::after{
   content: "Projects";
-  top: 32%;
+  top: 280px;
 }
 #icon-4:hover::after{   
-  content: "Mymentor";
-  top: 47%;
+  content: "Mymentors";
+  top: 360px;
 }
 #icon-5:hover::after{
+  content: "Groups";
+  top: 445px;
+}
+#icon-6:hover::after{
   content: "Logout";
-  top: 90%;
+  top: 660px;
 }
 .topbox{
 position: absolute;
