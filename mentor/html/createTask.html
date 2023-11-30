@@ -16,236 +16,113 @@
 <body> 
 
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 p-0">
-           <div class="mentee" id="nav">
-                <div class="topbox">
-                    <div class="logo">
-                        <img class="logo1" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699446914/Tej/AAC-logo_cggiv4.png">
-                    </div>
-                    <div class="npicons">
-                        <a href="notification.html"><img class="np" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699447782/Tej/notification-logo_ixgll2.png"></a>
-                        <a href="profile.html"><img class="np" src="https://res.cloudinary.com/dniqddd3d/image/upload/v1701264672/profile-img_1_anla9l.png"></a>
-                    </div>
-                </div>
-            </div> 
+    <div class="topbox">
+        <div class="logo">
+            <img class="logo1" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699446914/Tej/AAC-logo_cggiv4.png">
         </div>
+        <div class="npicons">
+            <img class="np" style="left: 30px;" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699447782/Tej/notification-logo_ixgll2.png">
+            <img class="np" src="https://res.cloudinary.com/dniqddd3d/image/upload/v1701264672/profile-img_1_anla9l.png">
+        </div>
+    </div>
+    <div style="float: left; position:relative; margin-top: 75px;  margin-left: 70px;">
+        <div class="container-fluid mt-5">
+  
+            <div class="row">
+                <div class="col-1"></div>
+              <div class="col-5 d-flex flex-column justify-content-center">
+                  <div class="create-class-link-card ">
+                      <div class="text-center">
+      
+                          <div >
+                              <div class="create-class-heading-box form-heading">
+                                <h1 class="create-class-heading  mb-3 pt-2 pb-2">Create Class</h1>
+                              </div>
+                              <form method="post" action="/submitLinkAndTime" id="linkAndTimeForm" class="create-class-form pt-5 p-2 shadow">
+                                  <div class="form-group row">
+                                      <div class="col-1"></div>
+                                      <label for="link" class="col-form-label col-3">Link:</label>
+                                      <div class="col-6">
+                                        <input type="url" id="link" name="link" class="form-control" required>
+                                      </div>
+                                    </div>
+                                
+                                    <div class="form-group row">
+                                      <div class="col-1"></div>
+                                      <label for="time" class="col-form-label col-3">Time:</label>
+                                      <div class="col-6">
+                                        <input type="time" id="time" name="time" class="form-control" required>
+                                      </div>
+                                    </div>
+                                
+                                    <div class="form-group">
+                                      <button type="submit" class="btn create-button">Submit</button>
+                                    </div>
+                              </form>
+                            </div>
+                      </div>
+                  </div>
+              </div>
         
-      </div>  
-      <div class="row">
-        <!-- Sidebar -->
-        <div class="col-1 p-0">
-          <div class="parent-box">
-            <div class="icon-box" id="side">
-                <a href="home.html"> <div class="icons" id="icon-1" ></div></a>
-                <a href="ongoingTasks.html"> <div class="icons" id="icon-2"></div></a>
-                <a href="myprojects.html"><div class="icons" id="icon-3"></div>
-                <a href="mymentor.html"><div class="icons" id="icon-4"></div>
-                <a href="groups.html"><div class="icons" id="icon-5"></div>
-                <a href="logout.html"><div class="icons" id="icon-6"></div></a>
+              <div class="col-6 d-flex flex-column justify-content-center ">
+                  <div class="create-task-card ml-5 mr-5 pb-5">
+      
+                          <div class="text-center">
+                              <h1 class="create-task-heading mb-3 p-2">Create Task</h1>
+                          </div>
+                          <form method="post" action="/submitTitleDescriptionDueDate" id="titleDescDueDateForm" class="shadow">
+                              
+                            <div class="form-group row">
+                              <div class="col-1"></div>
+                              <label for="title" class="col-form-label col-3">Title:</label>
+                              
+                              <div class="col-7">
+                                <input type="text" id="title" name="title" class="form-control" required>
+                              </div>
+                            </div>
+                        
+                            <div class="form-group row">
+                              <div class="col-1"></div>
+                              <label for="description" class="col-form-label col-3">Description:</label>
+                              <div class="col-7">
+                                <textarea id="description" name="description" class="form-control" rows="4" required></textarea>
+                              </div>
+                            </div>
+                        
+                            <div class="form-group row">
+                              <div class="col-1"></div>
+                              <label for="dueDate" class="col-form-label col-3">Due Date:</label>
+                              <div class="col-7">
+                                <input type="date" id="dueDate" name="dueDate" class="form-control" required>
+                              </div>
+                            </div>
+                        
+                            <div class="form-group text-center">
+                              <button type="submit" class="btn create-button">Submit</button>
+                            </div>
+                          </form>
+                        
+                  </div>
+                  
+              </div>
             </div>
           </div>
-        </div>
-  
-        <div class="col-5 d-flex flex-column justify-content-center">
-            <div class="create-class-link-card ">
-                <div class="text-center">
-                    <div class="create-class-heading-box">
-                        <h1 class="create-class-heading">Create Class</h1>
-                    </div>
-                    <form method="post" action="/submitLinkAndTime" id="linkAndTimeForm">
-                        <div class="form-group row">
-                          <label for="link" class="col-form-label col-md-4">Link:</label>
-                          <div class="col-md-8">
-                            <input type="url" id="link" name="link" class="form-control" required>
-                          </div>
-                        </div>
-                    
-                        <div class="form-group row">
-                          <label for="time" class="col-form-label col-md-4">Time:</label>
-                          <div class="col-md-8">
-                            <input type="time" id="time" name="time" class="form-control" required>
-                          </div>
-                        </div>
-                    
-                        <div class="form-group">
-                          <button type="submit" class="btn create-button">Submit</button>
-                        </div>
-                      </form>
-                    
-                    <!-- <form method="post" action="/submitLinkAndTime" id="linkAndTimeForm">
-                        <span class="span-element">
-                            <label for="link">Link:</label>
-                            <input type="url" id="link" name="link" required>
-                        </span>
-                        <span class="span-element">
-                            <label for="time">Time:</label>
-                            <input type="time" id="time" name="time" required>
-                        </span>
-                        <span class="span-element">
-                            <button type="submit">Submit</button>
-                        </span>
-                    </form> -->
-                </div>
-            </div>
-        </div>
-  
-        <div class="col-5 d-flex flex-column justify-content-center ">
-            <div class="create-task-card ml-5 mr-5 pb-5">
-                    <!-- <div class="create-task-card">
-                        <form method="post" action="/submitTitleDescriptionDueDate" id="titleDescDueDateForm">
-                            <div class="text-center">
-                                <h1 class="create-task-heading">Create Task</h1>
-                            </div>
-                            
-                            <span class="span-element">
-                                <label for="title">Title:</label>
-                                <input type="text" id="title" name="title" required>    
-                            </span>
-                            <span class="span-element">
-                                <label for="description">Description:</label>
-                                <textarea id="description" name="description" rows="4" required></textarea>
-                            </span>
-                            <span class="span-element">
-                            <label for="dueDate">Due Date:</label>
-                            <input type="date" id="dueDate" name="dueDate" required>    
-                            </span>
-                            <span class="span-element">
-                                <button type="submit">Submit Title, Description, and Due Date</button>
-                            </span>
-                            
-                        </form>    
-                    </div> -->
-                    <div class="text-center">
-                        <h1 class="create-task-heading mb-3 p-2">Create Task</h1>
-                    </div>
-                    <form method="post" action="/submitTitleDescriptionDueDate" id="titleDescDueDateForm" class="shadow">
-                        
-                      <div class="form-group row">
-                        <div class="col-1"></div>
-                        <label for="title" class="col-form-label col-3">Title:</label>
-                        
-                        <div class="col-7">
-                          <input type="text" id="title" name="title" class="form-control" required>
-                        </div>
-                      </div>
-                  
-                      <div class="form-group row">
-                        <div class="col-1"></div>
-                        <label for="description" class="col-form-label col-3">Description:</label>
-                        <div class="col-7">
-                          <textarea id="description" name="description" class="form-control" rows="4" required></textarea>
-                        </div>
-                      </div>
-                  
-                      <div class="form-group row">
-                        <div class="col-1"></div>
-                        <label for="dueDate" class="col-form-label col-3">Due Date:</label>
-                        <div class="col-7">
-                          <input type="date" id="dueDate" name="dueDate" class="form-control" required>
-                        </div>
-                      </div>
-                  
-                      <div class="form-group text-center">
-                        <button type="submit" class="btn create-button">Submit</button>
-                      </div>
-                    </form>
-                  
-            </div>
-            
-        </div>
-      </div>
-    </div>
-  
-<!--   
-
-
-<div>
-    <div id="side"></div> 
-    
-    <div class="mentee" id="nav">
-        <div class="topbox">
-            <div class="logo">
-                <img class="logo1" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699446914/Tej/AAC-logo_cggiv4.png">
-            </div>
-            <div class="npicons">
-                <a href="notification.html"><img class="np" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699447782/Tej/notification-logo_ixgll2.png"></a>
-                <a href="profile.html"><img class="np" src="https://res.cloudinary.com/dniqddd3d/image/upload/v1701264672/profile-img_1_anla9l.png"></a>
-            </div>
-        </div>
-    </div>
-
-        
-        
-    <div class="container">
-        <div class="row">  
-            <div class="">
-                <div class="parent-box">
-                    <div class="icon-box" id="side">
-                        <a href="home.html"> <div class="icons" id="icon-1" ></div></a>
-                        <a href="ongoingTasks.html"> <div class="icons" id="icon-2"></div></a>
-                        <a href="myprojects.html"><div class="icons" id="icon-3"></div>
-                        <a href="mymentor.html"><div class="icons" id="icon-4"></div>
-                        <a href="groups.html"><div class="icons" id="icon-5"></div>
-                        <a href="logout.html"><div class="icons" id="icon-6"></div></a>
-                    </div>
-                </div>
-            </div>    
-            <div class="col-5">
-                <div class="create-class-link-card">
-                    <div class="text-center">
-                        <div class="create-class-heading-box">
-                            <h1 class="create-class-heading">Create Class</h1>
-                        </div>
-                        
-                        <form method="post" action="/submitLinkAndTime" id="linkAndTimeForm">
-                            <span class="span-element">
-                                <label for="link">Link:</label>
-                                <input type="url" id="link" name="link" required>
-                            </span>
-                            <span class="span-element">
-                                <label for="time">Time:</label>
-                                <input type="time" id="time" name="time" required>
-                            </span>
-                            <span class="span-element">
-                                <button type="submit">Submit</button>
-                            </span>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <form method="post" action="/submitTitleDescriptionDueDate" id="titleDescDueDateForm">
-                    <div class="text-center">
-                        <h1 class="create-task-heading">Create Task</h1>
-                    </div>
-                    
-                    <span class="span-element">
-                        <label for="title">Title:</label>
-                        <input type="text" id="title" name="title" required>    
-                    </span>
-                    <span class="span-element">
-                        <label for="description">Description:</label>
-                        <textarea id="description" name="description" rows="4" required></textarea>
-                    </span>
-                    <span class="span-element">
-                    <label for="dueDate">Due Date:</label>
-                    <input type="date" id="dueDate" name="dueDate" required>    
-                    </span>
-                    <span class="span-element">
-                        <button type="submit">Submit Title, Description, and Due Date</button>
-                    </span>
-                    
-                </form>
-            </div>
-        </div>
     </div>
 
     
+    <div class="parent-box">
+        <div class="icon-box  ">
+            <br><br><br><br>
+            <div class="icons" id="icon-1" ></div>
+            <div class="icons" id="icon-2"></div>
+            <div class="icons" id="icon-3"></div>
+            <div class="icons" id="icon-4"></div>
+            <div class="icons" id="icon-5"></div><br><br><br><br><br>
+            <div class="icons" id="icon-6"></div>
+        </div>              
 
-
-</div>        -->
+    
+ 
     <script src="createTask.js"></script>
 </body>
 </html>
