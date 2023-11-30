@@ -1,19 +1,17 @@
 *{
     padding: auto;
     margin: auto;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Dela Gothic one', sans-serif;
 }
-body{
-    font-family: 'Poppins';
-}
+
 nav{
-    height: 4.375rem;
+    height: 75px;
     width: 1 rem;
     background-color: #88B0D7;
 }
 nav ul{
     float:right;
-    margin-right: 2.5rem;
+    /* margin-right: 2.5rem; */
 }
 nav li{
     display: inline-block;

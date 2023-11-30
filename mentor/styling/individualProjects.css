@@ -1,10 +1,10 @@
 .individual{
   /* background-color: #0e2632; */
-  height: auto;
-  width: auto;
+  /* height: auto;
+  width: auto; */
   /* position: fixed; */
 }
-#nav{
+/* #nav{
   background-color: #88B0D7;
   width: 1264px;
   height: 75px;
@@ -17,14 +17,14 @@
   width: 70px;
   position: absolute;
   margin-top: 75px;
-}
+} */
 #title{
   position: absolute;
   margin-left: 200px;
   margin-top: 140px;
   font-family: 'Urbanist', sans-serif;
   height: 30px;
-  width: 210px;
+  width: 180px;
   border-radius: 10px;
   background-color: #A4C4D2;
   text-align: center;
@@ -58,8 +58,8 @@
 }
 #file{
   position: absolute;
-  margin-left: 200px;
-  margin-top: 340px;
+  margin-left: 270px;
+  margin-top: 420px;
   font-family: 'Urbanist', sans-serif;
   height: 30px;
   width: 170px;
@@ -68,7 +68,14 @@
   text-align: center;
   font-size: larger;
   padding-top: 7px;
+  
 }
 #sub{
   color: black;
 }
+
+
+h1{
+  font-size: larger;
+}
+
