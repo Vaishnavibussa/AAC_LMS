@@ -1,3 +1,6 @@
+*{
+  font-family: 'Urbanist', sans-serif;
+}
 body{
   background-color: #DAE0E3;
 }
@@ -6,7 +9,6 @@ body{
 }
 .create-class-heading,
 .create-task-heading{
-  font-family: 'Urbanist', sans-serif;
   font-size: 25px;
 }
 .create-class-heading-box{
@@ -14,14 +16,22 @@ body{
   border-radius: 15px;
   margin: 40px;
 }
-.create-class-heading{
-}
+/* .create-class-heading{
+} */
 .create-task-heading{
   background-color: #DAE0E3;
-
+  border-radius: 10px;
+  margin-top: 15px;
 }
 .create-task-card{
   background-color: #A4C4D2;
   padding: 50px 40px 55px 40px;
   border-radius: 25px;
+}
+.create-button{
+  background-color: #DAE0E3;
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }

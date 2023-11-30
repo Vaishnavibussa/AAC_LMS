@@ -17,13 +17,13 @@
   width: 50px;
   /* background-color: #233B6E; */
   /* border-radius: 50%; */
-  margin:20px 10px ; 
+  margin-bottom:10px ; 
   /* box-shadow: rgba(0.3, 0.3, 0.3, 0.3) 0px 3px 2px; */
   align-items: center;
   justify-content: center;
   cursor: pointer;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
 }
 .icons:hover::after{
   color: white;
@@ -69,7 +69,6 @@ background-size: contain; /* Adjust the value as needed */
   margin-bottom: 10px;
   background-image: url('https://res.cloudinary.com/dp6gegfek/image/upload/v1699448716/Tej/exit_vbnkrq.png');
   /* margin-top: 200%; */
-
   background-repeat: no-repeat;
 }
 #icon-1:hover::after{
