@@ -45,6 +45,8 @@
     border-radius: 10px;
     padding-top: 6px;
     box-shadow: 0 3px #b4b4b4;
+    font-size: larger;
+    font-weight: bold;
 }
 #id{
     height: 30px;
@@ -54,6 +56,8 @@
     padding-top: 6px;
     box-shadow: 0 3px #b4b4b4;
     margin-top: 30px;
+   font-size: larger;
+    font-weight: bold;
 }
 #groupno{
     height: 30px;
@@ -63,6 +67,8 @@
     padding-top: 6px;
     box-shadow: 0 3px #b4b4b4;
     margin-top: 30px;
+font-size: larger;
+    font-weight: bold;
 }
 #tasks{
     position: absolute;

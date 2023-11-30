@@ -1,4 +1,52 @@
-<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ONLY</title>
+        <link rel="stylesheet" href="../styling/navside.css">
+        <link rel="stylesheet" href="../styling/individualProjects.css">
+    </head>
+    <body>
+
+        <div class="topbox">
+            <div class="logo">
+                <img class="logo1" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699446914/Tej/AAC-logo_cggiv4.png">
+            </div>
+            <div class="npicons">
+                <img class="np" style="left: 30px;" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699447782/Tej/notification-logo_ixgll2.png">
+                <img class="np" src="https://res.cloudinary.com/dniqddd3d/image/upload/v1701264672/profile-img_1_anla9l.png">
+            </div>
+        </div>
+        <div style="float: left; position:relative; margin-top: 75px;  margin-left: 70px;">
+            <form method="post" action="http://localhost:3000/submitProject" enctype="multipart/form-data" id="indproj">
+                <div class="individual">
+            
+                    <h2 id="title">Project Abstract
+                        <input type="text" name="abstract"  required></h2>
+                    <h2 id="code">Source Code
+                    <input type="file" name="codeFile" accept=".zip, .rar" required> </h2>
+                    <h2 id="file">Project Link
+                    <input type="url" name="projectLink" required> </h2>
+                    <button type="submit" id="sub">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        
+        <div class="parent-box">
+            <div class="icon-box" >
+                <br><br><br><br>
+                <div class="icons" id="icon-1" ></div>
+                <div class="icons" id="icon-2"></div>
+                <div class="icons" id="icon-3"></div>
+                <div class="icons" id="icon-4"></div>
+                <div class="icons" id="icon-5"></div><br><br><br><br><br>
+                <div class="icons" id="icon-6"></div>
+            </div>          
+    </body>
+</html>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +55,31 @@
     <link rel="stylesheet" href="../styling/individualProjects.css">
 </head>
 <body>
+       
+<div id="nav"></div>
+<div id="side"></div> 
+    
+  <div class="mentee" id="nav">
+        <div class="topbox">
+            <div class="logo">
+                <img class="logo1" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699446914/Tej/AAC-logo_cggiv4.png">
+            </div  >
+            <div class="npicons" style="margin-left: 1050px;">
+                <a href="notification.html"><img class="np" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699447782/Tej/notification-logo_ixgll2.png"></div></a>
+                <a href="profile.html"><img class="np" src="https://res.cloudinary.com/dniqddd3d/image/upload/v1701264672/profile-img_1_anla9l.png"></a>
+            </div>
+        </div>
+
+        
+        <div class="parent-box">
+            <div class="icon-box" id="side">
+               <a href="home.html"> <div class="icons" id="icon-1" ></div></a>
+               <a href="ongoingTasks.html"> <div class="icons" id="icon-2"></div></a>
+                <a href="myprojects.html"><div class="icons" id="icon-3"></div>
+                <a href="mymentor.html"><div class="icons" id="icon-4"></div>
+                <a href="groups.html"><div class="icons" id="icon-5"></div>
+                <a href="logout.html"><div class="icons" id="icon-6"></div></a>
+            </div>
     <form method="post" action="http://localhost:3000/submitProject" enctype="multipart/form-data" id="indproj">
         <div class="individual">
             <div id="nav"></div>
@@ -14,9 +87,9 @@
             <h2 id="title">Project Abstract</h2>
             <input type="text" name="abstract" required>
             <h2 id="code">Source Code</h2>
-            <input type="file" name="codeFile" accept=".zip, .rar" required> <!-- Ensure the name matches backend -->
+            <input type="file" name="codeFile" accept=".zip, .rar" required> 
             <h2 id="file">Project Link</h2>
-            <input type="url" name="projectLink" required> <!-- Ensure the name matches backend -->
+            <input type="url" name="projectLink" required> 
             <button type="submit" id="sub">Submit</button>
         </div>
     </form>
@@ -24,4 +97,4 @@
 
     <script src="individualProjects.js"></script>
 </body>
-</html>
+</html> -->

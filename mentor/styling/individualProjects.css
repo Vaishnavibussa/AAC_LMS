@@ -1,8 +1,8 @@
 .individual{
-  background-color: #DAE0E3;
-  height: 590px;
-  width: 1270px;
-  position: fixed;
+  /* background-color: #0e2632; */
+  height: auto;
+  width: auto;
+  /* position: fixed; */
 }
 #nav{
   background-color: #88B0D7;
@@ -20,8 +20,8 @@
 }
 #title{
   position: absolute;
-  margin-left: 25%;
-  margin-top: 20%;
+  margin-left: 200px;
+  margin-top: 140px;
   font-family: 'Urbanist', sans-serif;
   height: 30px;
   width: 210px;
@@ -31,7 +31,7 @@
   font-size: larger;
   padding-top: 7px;
 }
-#sample{
+/* #sample{
   position: absolute;
   margin-left: 47%;
   margin-top: 260px;
@@ -42,11 +42,11 @@
   position: absolute;
   margin-top: 20%;
   margin-left: 40.6%;
-}
+} */
 #code{
       position: absolute;
-      margin-left: 25%;
-      margin-top: 27%;
+      margin-left: 200px;
+      margin-top: 240px;
       font-family: 'Urbanist', sans-serif;
       height: 30px;
       width: 170px;
@@ -58,8 +58,8 @@
 }
 #file{
   position: absolute;
-  margin-left: 25%;
-  margin-top: 34%;
+  margin-left: 200px;
+  margin-top: 340px;
   font-family: 'Urbanist', sans-serif;
   height: 30px;
   width: 170px;
