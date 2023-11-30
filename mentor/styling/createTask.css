@@ -1,0 +1,27 @@
+body{
+  background-color: #DAE0E3;
+}
+.span-element{
+  display: block;
+}
+.create-class-heading,
+.create-task-heading{
+  font-family: 'Urbanist', sans-serif;
+  font-size: 25px;
+}
+.create-class-heading-box{
+  background-color: #A4C4D2;
+  border-radius: 15px;
+  margin: 40px;
+}
+.create-class-heading{
+}
+.create-task-heading{
+  background-color: #DAE0E3;
+
+}
+.create-task-card{
+  background-color: #A4C4D2;
+  padding: 50px 40px 55px 40px;
+  border-radius: 25px;
+}
