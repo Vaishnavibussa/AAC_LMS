@@ -3,17 +3,32 @@
   margin: 0;
   box-sizing: border-box;
 }
+#nav{
+  background-color: #88B0D7;
+  width: 100%;
+  height: 75px;
+  margin-top: 0;
+  position: fixed;
+  
+}
+#side{
+  background-color: #233B6E;
+  height: 100vh;
+  width: 70px;
+  position: fixed;
+  margin-top: 75px;
+}
 .parent-box{
   height: 100%;
   width: 70px;
   background-color: #233B6E;    
   display: inline-block;
   vertical-align: middle;
-}
+} 
 .icon-box{
-  top: 15%;
+  /* top: 15%; */
   position: relative;                
-}
+} 
 .icons{
   height: 9%;
   width: 72%;
@@ -108,6 +123,7 @@ justify-content: space-between;
   height: 70%;
   margin: 5% 3rem 0% 0%;
   cursor: pointer;
+  
 }
 .logo1{
   height: 90%;
@@ -121,11 +137,14 @@ justify-content: space-between;
   padding: 7px 0px 15px 0px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  margin-top: 10px;
 }
 .fc-day-header{
   font-family: 'Allerta Stencil', sans-serif;
 }
 .fc-body{
+  height: 30px;
+  width: 30px;
   background-color: #DAE0E3;
 }
 .fc-day{
@@ -155,7 +174,8 @@ justify-content: space-between;
 }
 
 #calendar {
-  max-width: 60%;
+  max-width: 50%;
+  height: 100px;
   margin:0 auto;
   background-size: cover;
 }
@@ -175,6 +195,7 @@ justify-content: space-between;
 
 .navbar-container{
   background-color: #88B0D7;
+  
 }
 .navbar-logo{
   height: 40px;
