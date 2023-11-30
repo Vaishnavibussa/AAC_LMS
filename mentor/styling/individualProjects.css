@@ -1,6 +1,10 @@
 *{
   font-family: 'Urbanist', sans-serif;
 }
+body{
+  overflow: hidden;
+  background-color: #DAE0E3;
+}
 .individual{
   /* background-color: #0e2632; */
   /* height: auto;
@@ -111,4 +115,26 @@ h1{
 }
 label, input{
   display: inline;
+}
+
+
+#title,#code,#file{
+background-color: #A4C4D2;
+padding: 7px 15px;
+font-size: 16px;
+border-radius: 10px;
+font-family: 'Urbanist',sans-serif;
+}
+
+input{
+  background-color: white;
+  border-color: #A4C4D2;
+}
+
+.Projects-submit-btn{
+  background-color: #7E90B6;
+  margin-left:100px;
+  border: none;
+  padding: 7px 30px;
+  border-radius: 5px;
 }
