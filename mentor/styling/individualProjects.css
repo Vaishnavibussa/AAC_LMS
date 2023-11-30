@@ -1,3 +1,6 @@
+*{
+  font-family: 'Urbanist', sans-serif;
+}
 .individual{
   /* background-color: #0e2632; */
   /* height: auto;
@@ -18,7 +21,7 @@
   position: absolute;
   margin-top: 75px;
 } */
-#title{
+/* #title{
   position: absolute;
   margin-left: 200px;
   margin-top: 140px;
@@ -30,7 +33,7 @@
   text-align: center;
   font-size: larger;
   padding-top: 7px;
-}
+} */
 /* #sample{
   position: absolute;
   margin-left: 47%;
@@ -43,10 +46,8 @@
   margin-top: 20%;
   margin-left: 40.6%;
 } */
-#code{
+/* #code{
       position: absolute;
-      margin-left: 200px;
-      margin-top: 240px;
       font-family: 'Urbanist', sans-serif;
       height: 30px;
       width: 170px;
@@ -69,7 +70,7 @@
   font-size: larger;
   padding-top: 7px;
   
-}
+} */
 #sub{
   color: black;
 }
@@ -79,3 +80,35 @@ h1{
   font-size: larger;
 }
 
+
+/* Existing styles */
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 7px;
+  background-color: #A4C4D2;
+  border-radius: 15px;
+  width: 200px; /* Adjust the width as needed */
+  text-align: center;
+  padding: 7px;
+}
+
+.input-field input {
+  width: 300px;
+  /* Add any other styling you need for the input boxes */
+}
+
+/* Add the following for the button */
+.input-field button {
+  background-color: #A4C4D2;
+  border-radius: 15px;
+  padding: 10px;
+  color: black; /* Adjust the text color as needed */
+}
+label, input{
+  display: inline;
+}
