@@ -4,11 +4,9 @@
   box-sizing: border-box;
 }
 .parent-box{
-  height: 100%;
+  height: 100vh;
   width: 70px;
   background-color: #233B6E;    
-  display: inline-block;
-  vertical-align: middle;
 }
 .icon-box{
   /* top: 15%; */
@@ -29,14 +27,15 @@
 }
 .icons:hover::after{
   color: white;
-  font-size: 200%;
+  font-size: 20px;
   position: absolute; 
-  left: 99%;
-  height: max-content;
-  width: max-content;
+  left: 70px;
+  text-align: center;
+  width: 140px;
   background-color: #233B6E;
-  padding: 20% 20% 20% 20%;
-  /* clip-path: polygon(75% 0%, 75% 0%, 90% 50%, 75% 100%, 75% 100%); */
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  padding:5px ;
 }
 #icon-1{
   background-image: url(' https://res.cloudinary.com/dp6gegfek/image/upload/v1699447781/Tej/home-img_wc4n1x.png');
