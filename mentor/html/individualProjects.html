@@ -20,8 +20,13 @@
                 <img class="logo1" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699446914/Tej/AAC-logo_cggiv4.png">
             </div>
             <div class="npicons">
-                <img class="np" style="left: 30px;" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699447782/Tej/notification-logo_ixgll2.png">
-                <img class="np" src="https://res.cloudinary.com/dniqddd3d/image/upload/v1701264672/profile-img_1_anla9l.png">
+                <div class="notification-icon"><img class="np" id="notification" style="left: 30px;" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699447782/Tej/notification-logo_ixgll2.png"></div>
+                <div class="notification-box">
+                    <!-- Content for notification box -->
+                   <h1 style="font-size: x-large; padding: 20px;">No notifications..!!</h1>
+                </div>
+                <!-- <img class="np" style="left: 30px;" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699447782/Tej/notification-logo_ixgll2.png"> -->
+                <a href="../../mentor/html/profile.html"> <img class="np" src="https://res.cloudinary.com/dniqddd3d/image/upload/v1701264672/profile-img_1_anla9l.png"></a>
             </div>
         </div>
         <div style="float: left; position:relative; margin-top: 75px; margin-left: 70px;" class="d-flex flex-column justify-content-center">
@@ -50,21 +55,21 @@
             <div class="container mt-5">
                 <form method="post" action="http://localhost:3000/submitProject" enctype="multipart/form-data" id="indproj">
                     <div class="individual row">
-                        <div class="form-group col-md-8">
-                            <label id="title" for="abstract" class="col-3">Project Abstract</label>
-                            <input type="text" class="form-control" id="abstract" name="abstract" class="col-7" required>
+                        <div class="abc form-group col-md-8">
+                            <label id="title" for="abstract" class="col-3"><b>Project Abstract</b></label>
+                            <input type="text"  class="form-control" id="abstract" name="abstract" class="col-7" required><br><br>
                         </div>
                         <br>
-                        <div class="form-group col-md-8">
-                            <label id="code" for="codeFile">Source Code</label>
-                            <input type="file" class="form-control-file" id="codeFile" name="codeFile" accept=".zip, .rar" required>
+                        <div class="abc form-group col-md-8">
+                            <label id="code" for="codeFile"><b>Source Code</b></label>
+                            <input type="file" class="form-control-file" id="codeFile" name="codeFile" accept=".zip, .rar" required><br><br>
                         </div>
-                        <div class="form-group col-md-8">
-                            <label id="file" for="projectLink">Project Link</label>
-                            <input type="url" class="form-control" id="projectLink" name="projectLink" required>
+                        <div class="abc form-group col-md-8">
+                            <label id="file" for="projectLink"><b>Project Link</b></label>
+                            <input type="url" class="form-control" id="projectLink" name="projectLink" required><br><br>
                         </div>
-                        <div class="form-group col-md-8">
-                            <button type="submit" class="Projects-submit-btn">Submit</button>
+                        <div class="abc form-group col-md-8">
+                            <button type="submit" class="Projects-submit-btn" style="font-weight: bolder; font-size: larger;">Submit</button>
                         </div>
                     </div>
                 </form>
@@ -75,12 +80,12 @@
         <div class="parent-box">
             <div class="icon-box" >
                 <br><br><br><br>
-                <div class="icons" id="icon-1" ></div>
-                <div class="icons" id="icon-2"></div>
-                <div class="icons" id="icon-3"></div>
-                <div class="icons" id="icon-4"></div>
-                <div class="icons" id="icon-5"></div><br><br><br><br><br>
-                <div class="icons" id="icon-6"></div>
+                <a href="../../mentor/html/home.html"><div class="icons" id="icon-1" ></div></a>
+                <a href="../../mentor/html/ongoingTasks.html"><div class="icons" id="icon-2"></div></a>
+                <a href="../../mentor/html/myprojects.html"><div class="icons" id="icon-3"></div></a>
+                <a href="../../mentor/html/mymentor.html"><div class="icons" id="icon-4"></div></a>
+                <a href="../../mentor/html/groups.html"><div class="icons" id="icon-5"></div></a><br><br><br><br><br>
+                <a href="../../login.html"><div class="icons" id="icon-6"></div></a>
             </div>          
     </body>
 </html>

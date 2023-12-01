@@ -1,0 +1,83 @@
+*{
+    /* position: fixed; */
+  }
+  body {
+    overflow: hidden; 
+  }
+  
+  .fc-widget-header{
+    background-color:#9F9D9D;
+    padding: 7px 0px 15px 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 10px;
+  }
+  .fc-day-header{
+    font-family: 'Allerta Stencil', sans-serif;
+  }
+  .fc-body{
+    height: 30px;
+    width: 30px;
+    background-color: #DAE0E3;
+  }
+  .fc-day{
+    border-radius: 20px;
+  }
+  
+  .fc-day-number {
+    background-color: #ffffff;
+    border-color: black;
+    border-width: 1px;
+    color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 35px;
+    line-height: 35px;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    
+  }
+  /* .fc-day-number:hover::after{
+    content: " CreateTask";
+  } */
+
+  .fc td,.fc th{
+    border-width: 0px;
+  }
+  
+  .fc-day-grid-event .fc-content {
+    text-align: center;
+  }
+  
+  #calendar {
+      overflow: hidden; 
+    max-width: 50%;
+    margin:40px auto;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .fc-day-top{
+    margin: 20px;
+  }
+  .fc-header-toolbar h2 {
+    font-family: 'Allerta Stencil', sans-serif;
+  }
+  .fc-toolbar,.fc-header-toolbar{
+    background-color: #A4C4D2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 0px;
+  }
+  .navbar-container{
+    background-color: #88B0D7;
+  }
+  .navbar-logo{
+    height: 40px;
+  }
+  .notification-logo{
+    height: 40px;
+  }
+  

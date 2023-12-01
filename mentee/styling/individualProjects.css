@@ -1,74 +1,135 @@
-.individual{
-    background-color: #DAE0E3;
-    height: 590px;
-    width: 1270px;
-    position: fixed;
-  }
-  #nav{
-    background-color: #88B0D7;
-    width: 1264px;
-    height: 75px;
-    margin-top: 0;
-    position: absolute;
-  }
-  #side{
-    background-color: #233B6E;
-    height: 515px;
-    width: 70px;
-    position: absolute;
-    margin-top: 75px;
-  }
-  #title{
-    position: absolute;
-    margin-left: 25%;
-    margin-top: 20%;
-    font-family: 'Urbanist', sans-serif;
-    height: 30px;
-    width: 210px;
-    border-radius: 10px;
-    background-color: #A4C4D2;
-    text-align: center;
-    font-size: larger;
-    padding-top: 7px;
-  }
-  #sample{
-    position: absolute;
-    margin-left: 47%;
-    margin-top: 260px;
-    font-family: 'Urbanist', sans-serif;
-    font-size: larger;
-  }
-  #colon{
-    position: absolute;
-    margin-top: 20%;
-    margin-left: 40.6%;
-  }
-  #code{
-        position: absolute;
-        margin-left: 25%;
-        margin-top: 27%;
-        font-family: 'Urbanist', sans-serif;
-        height: 30px;
-        width: 170px;
-        border-radius: 10px;
-        background-color: #A4C4D2;
-        text-align: center;
-        font-size: larger;
-        padding-top: 7px;
-  }
-  #file{
-    position: absolute;
-    margin-left: 25%;
-    margin-top: 34%;
-    font-family: 'Urbanist', sans-serif;
-    height: 30px;
-    width: 170px;
-    border-radius: 10px;
-    background-color: #A4C4D2;
-    text-align: center;
-    font-size: larger;
-    padding-top: 7px;
-  }
-  #sub{
-    color: black;
-  }
+*{
+  font-family: 'Urbanist', sans-serif;
+}
+body{
+  overflow: hidden;
+  background-color: #DAE0E3;
+}
+
+/* #nav{
+  background-color: #88B0D7;
+  width: 1264px;
+  height: 75px;
+  margin-top: 0;
+  position: absolute;
+}
+#side{
+  background-color: #233B6E;
+  height: 515px;
+  width: 70px;
+  position: absolute;
+  margin-top: 75px;
+} */
+/* #title{
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 140px;
+  font-family: 'Urbanist', sans-serif;
+  height: 30px;
+  width: 180px;
+  border-radius: 10px;
+  background-color: #A4C4D2;
+  text-align: center;
+  font-size: larger;
+  padding-top: 7px;
+} */
+/* #sample{
+  position: absolute;
+  margin-left: 47%;
+  margin-top: 260px;
+  font-family: 'Urbanist', sans-serif;
+  font-size: larger;
+}
+#colon{
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 40.6%;
+} */
+/* #code{
+      position: absolute;
+      font-family: 'Urbanist', sans-serif;
+      height: 30px;
+      width: 170px;
+      border-radius: 10px;
+      background-color: #A4C4D2;
+      text-align: center;
+      font-size: larger;
+      padding-top: 7px;
+}
+#file{
+  position: absolute;
+  margin-left: 270px;
+  margin-top: 420px;
+  font-family: 'Urbanist', sans-serif;
+  height: 30px;
+  width: 170px;
+  border-radius: 10px;
+  background-color: #A4C4D2;
+  text-align: center;
+  font-size: larger;
+  padding-top: 7px;
+  
+} */
+#sub{
+  color: black;
+}
+
+
+h1{
+  font-size: larger;
+}
+
+
+/* Existing styles */
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 7px;
+  background-color: #A4C4D2;
+  border-radius: 15px;
+  width: 200px; /* Adjust the width as needed */
+  text-align: center;
+  padding: 7px;
+}
+
+.input-field input {
+  width: 300px;
+  /* Add any other styling you need for the input boxes */
+}
+
+/* Add the following for the button */
+.input-field button {
+  background-color: #A4C4D2;
+  border-radius: 15px;
+  padding: 10px;
+  color: black; /* Adjust the text color as needed */
+}
+label, input{
+  display: inline;
+}
+
+
+#title,#code,#file{
+background-color: #A4C4D2;
+padding: 7px 15px;
+font-size: 16px;
+border-radius: 10px;
+font-family: 'Urbanist',sans-serif;
+}
+
+input{
+  background-color: white;
+  border-color: #A4C4D2;
+}
+
+.Projects-submit-btn{
+  background-color: #7E90B6;
+  margin-left:100px;
+  border: none;
+  padding: 7px 30px;
+  border-radius: 5px;
+}

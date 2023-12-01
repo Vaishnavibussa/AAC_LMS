@@ -1,0 +1,95 @@
+.projects{
+    background-color: #DAE0E3;
+    /* height: 590px; */
+    width: 1270px;
+    position: fixed;
+}
+/* #nav{
+    background-color: #88B0D7;
+    width: 1264px;
+    height: 75px;
+    margin-top: 0;
+    position: absolute;
+}
+#side{
+    background-color: #233B6E;
+    height: 515px;
+    width: 70px;
+    position: absolute;
+    margin-top: 75px;
+} */
+.buttons{
+    margin-left: -20px;
+}
+#one{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 25%;
+    height: 200px;
+    width: 150px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #7E90B6;
+    box-shadow: 3px 3px 3px 3px #999;
+}
+#one img{
+    position: absolute;
+    margin-left: -67px;
+    margin-top: -65px;
+    height: 150px;
+    width: 140px;
+}
+#two{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 50%;
+    height: 200px;
+    width: 150px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #7E90B6;
+    box-shadow: 3px 3px 3px 3px #999;
+}
+#two img{
+    position: absolute;
+    margin-left: -76px;
+    margin-top: -85px;
+    height: 170px;
+    width: 150px;
+}
+#three{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 75%;
+    height: 200px;
+    width: 150px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #7E90B6;
+    box-shadow: 3px 3px 3px 3px #999;
+}
+#three img{
+    position: absolute;
+    margin-left: -64px;
+    margin-top: -74px;
+    height: 150px;
+    width: 130px;
+}
+#t1{
+    position: absolute;
+    margin-left: 23.8%;
+    margin-top: 33%;
+}
+#t2{
+    position: absolute;
+    margin-left: 48.5%;
+    margin-top: 33%;
+}
+#t3{
+    position: absolute;
+    margin-left: 73.5%;
+    margin-top: 33%;
+}

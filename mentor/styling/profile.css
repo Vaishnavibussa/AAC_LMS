@@ -1,9 +1,4 @@
-.profile{
-    background-color: #DAE0E3;
-    /* height: auto; */
-    /* width: 1270px; */
-    position: fixed;
-}
+
 #picture{
     height: 130px;
     width: 100px;
@@ -55,8 +50,8 @@
     margin-top: 75px;
 } */
 .profile{
-    background-color: #DAE0E3;
-    /* height: 590px;
+    /* background-color: #DAE0E3; */
+    /* height: auto;
     width: 1270px; */
     position: fixed;
 }
@@ -64,7 +59,7 @@
     height: 150px;
     width: 130px;
     border-radius: 30px;
-    background-color: #757575;
+    /* background-color: #757575; */
     margin-left: 570px;
     margin-top: 140px;
     position: absolute;
@@ -102,5 +97,9 @@
 h1{
     font-size: x-large;
     font-weight: bold;
+}
+#details{
+    margin-top: 300px;
+    margin-left: 580px;
 }
 

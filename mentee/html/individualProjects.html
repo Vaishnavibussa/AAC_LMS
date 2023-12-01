@@ -1,27 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Individual Projects</title>
-    <link rel="stylesheet" href="../styling/individualProjects.css">
-</head>
-<body>
-    <form method="post" action="http://localhost:3000/submitProject" enctype="multipart/form-data" id="indproj">
-        <div class="individual">
-            <div id="nav"></div>
-            <div id="side"></div>
-            <h2 id="title">Project Abstract</h2>
-            <input type="text" name="abstract" required>
-            <h2 id="code">Source Code</h2>
-            <input type="file" name="codeFile" accept=".zip, .rar" required> <!-- Ensure the name matches backend -->
-            <h2 id="file">Project Link</h2>
-            <input type="url" name="projectLink" required> <!-- Ensure the name matches backend -->
-            <button type="submit" id="sub">Submit</button>
-        </div>
-    </form>
-    <div id="submittedProjects"></div>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ONLY</title>
+        <link rel="stylesheet" href="../styling/navside.css">
+        <link rel="stylesheet" href="../styling/individualProjects.css">
 
-    <script src="individualProjects.js"></script>
-</body>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+
+    </head>
+    <body>
+
+        <div class="topbox">
+            <div class="logo">
+                <img class="logo1" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699446914/Tej/AAC-logo_cggiv4.png">
+            </div>
+            <div class="npicons">
+                <div class="notification-icon"><img class="np" id="notification" style="left: 30px;" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699447782/Tej/notification-logo_ixgll2.png"></div>
+                <div class="notification-box">
+                    <!-- Content for notification box -->
+                   <h1 style="font-size: x-large; padding: 20px;">No notifications..!!</h1>
+                </div>
+                <!-- <img class="np" style="left: 30px;" src="https://res.cloudinary.com/dp6gegfek/image/upload/v1699447782/Tej/notification-logo_ixgll2.png"> -->
+                <a href="../../mentor/html/profile.html"> <img class="np" src="https://res.cloudinary.com/dniqddd3d/image/upload/v1701264672/profile-img_1_anla9l.png"></a>
+            </div>
+        </div>
+        <div style="float: left; position:relative; margin-top: 75px; margin-left: 70px;" class="d-flex flex-column justify-content-center">
+            
+            <div class="container mt-5">
+                <form method="post" action="http://localhost:3000/submitProject" enctype="multipart/form-data" id="indproj">
+                    <div class="individual row">
+                        <div class="form-group col-md-8">
+                            <label id="title" for="abstract" class="col-3"><b>Project Abstract</b></label>
+                            <input type="text"  class="form-control" id="abstract" name="abstract" class="col-7" required><br><br>
+                        </div>
+                        <br>
+                        <div class="form-group col-md-8">
+                            <label id="code" for="codeFile"><b>Source Code</b></label>
+                            <input type="file" class="form-control-file" id="codeFile" name="codeFile" accept=".zip, .rar" required><br><br>
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label id="file" for="projectLink"><b>Project Link</b></label>
+                            <input type="url" class="form-control" id="projectLink" name="projectLink" required><br><br>
+                        </div>
+                        <div class="form-group col-md-8">
+                            <button type="submit" class="Projects-submit-btn" style="font-weight: bolder; font-size: larger;">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+        <div class="parent-box">
+            <div class="icon-box" >
+                <br><br><br><br>
+                <a href="../../mentor/html/home.html"><div class="icons" id="icon-1" ></div></a>
+                <a href="../../mentor/html/ongoingTasks.html"><div class="icons" id="icon-2"></div></a>
+                <a href="../../mentor/html/myprojects.html"><div class="icons" id="icon-3"></div></a>
+                <a href="../../mentor/html/mymentor.html"><div class="icons" id="icon-4"></div></a>
+                <!-- <a href="../../mentor/html/groups.html"><div class="icons" id="icon-5"></div></a><br><br><br><br><br> -->
+                <a href="../../login.html"><div class="icons" id="icon-6"></div></a>
+            </div>          
+    </body>
 </html>

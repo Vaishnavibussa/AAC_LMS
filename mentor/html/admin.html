@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+<link rel="stylesheet" href="../styling/admin.css">
 
 </head>
 <body>
+    <h1 style="background-color: aliceblue; font-size: xx-large; font-family: Arial, Helvetica, sans-serif;"></h1>
+    <div id="left">
     <form action="/mentor" id="mentor" method="post"> 
-        <h1>Mentor</h1>
+        <u><h1>Mentor</h1></u>
         <h2>AAC ID</h2>
         <input type="text" name="AAC_ID">
         <h2>Password</h2>
@@ -27,11 +29,13 @@
         <h2>Image</h2>
         <input type="file" id="image" name="image" accept="image/*">
         <br><br>
-      <button type="submit" id="">SUBMIT</button>
+      <button type="submit" id="sub">SUBMIT</button>
       
         </form>
+    </div>
+    <div id="right">
         <form action="/mentee" method="post">
-            <h1>Mentee</h1>
+        <u><h1>Mentee</h1></u>
         <h2>AAC Id</h2>
         <input type="text" name="AAC_ID">
         <h2>Password</h2>
@@ -47,11 +51,12 @@
         <h2>Mentor2_id</h2>
         <input type="number" name="mentor2_id" >
         <h2>Image</h2>
-        <!-- <input type="file" id="image" name="image" accept="image/*">
+        <input type="file" id="image" name="image" accept="image/*">
         <br><br>
-        <button type="submit" id="">SUBMIT</button>
-         -->
+        <button type="submit" id="sub">SUBMIT</button>
+        
     </form>
+    </div>
     <div id="popup-msg"></div>    
 </body>
 </html>

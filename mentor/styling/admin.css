@@ -1,0 +1,28 @@
+*{
+    font-family: sans-serif;
+    text-align: center;
+    background-color: rgb(131, 170, 221);
+}
+#left{
+    position: absolute;
+    margin-left: 300px;
+    height: auto;
+   
+}
+#right{
+    position: relative;
+    float: inline-end;
+margin-right: 300px;
+
+}
+#sub{
+    background-color: #233b6e;
+    height: 40px;
+    width: 90px;
+    font-weight: bolder;
+    font-size:larger;
+    color: rgb(218, 225, 230);
+}
+input{
+    border-color: aliceblue;
+}

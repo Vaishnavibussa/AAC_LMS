@@ -1,3 +1,9 @@
+*{
+  /* position: fixed; */
+}
+body {
+  overflow: hidden; 
+}
 
 .fc-widget-header{
   background-color:#9F9D9D;
@@ -31,6 +37,13 @@
   text-align: center;
   cursor: pointer;
   margin-top: 20px;
+  
+}
+/* .fc-day-number:hover::after{
+  content: " CreateTask";
+} */
+.fc-day-number{
+  
 }
 .fc td,.fc th{
   border-width: 0px;
@@ -41,7 +54,7 @@
 }
 
 #calendar {
-  
+    overflow: hidden; 
   max-width: 50%;
   margin:40px auto;
   background-size: cover;

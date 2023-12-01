@@ -5,12 +5,7 @@ body{
   overflow: hidden;
   background-color: #DAE0E3;
 }
-.individual{
-  /* background-color: #0e2632; */
-  /* height: auto;
-  width: auto; */
-  /* position: fixed; */
-}
+
 /* #nav{
   background-color: #88B0D7;
   width: 1264px;
@@ -137,4 +132,8 @@ input{
   border: none;
   padding: 7px 30px;
   border-radius: 5px;
+}
+.abc{
+  margin-left: 200px;
+  margin-top: 40px;
 }

@@ -15,7 +15,7 @@ const db = mysql.createConnection({
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/taskpage.html');
+    res.sendFile(__dirname + '/../../AAC_LMS/mentor/html/createTask.html');
 });
 
 // Endpoint to fetch data from the 'tasks' table

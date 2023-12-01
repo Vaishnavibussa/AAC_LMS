@@ -73,3 +73,24 @@
 #colon{
     padding-bottom: 25px;
 }
+.notification-icon {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .notification-box {
+    position: absolute;
+    top: 75px; /* Adjust this value as needed */
+    right: 0.1px; /* Adjust this value as needed */
+    width: 400px; /* Adjust this value as needed */
+    height: 500px;
+    background-color: #A4C4D2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+    z-index: 1000;
+  }
+  #colon{
+    font-size: x-large;
+    margin-top: 11px;
+  }
